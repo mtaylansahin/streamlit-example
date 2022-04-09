@@ -14,11 +14,11 @@ In the meantime, below is an example of what you can do with just a few lines of
 
 
 with st.echo(code_location='below'):
-    lat = st.text_input(label="Latitude")
-    lon = st.text_input(label="Longitude")
+    lat = st.text_input(label="Latitude", value="41.015137")
+    lon = st.text_input(label="Longitude", value="28.979530")
     # 41.015137, 28.979530
     df = pd.DataFrame(
-         {"lat":[lat], "lon":[lon]})
+         {"lat":[float(lat)], "lon":[float(lon)]})
 
     st.map(df)
     
