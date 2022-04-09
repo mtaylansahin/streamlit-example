@@ -18,7 +18,7 @@ with st.echo(code_location='below'):
     lon = st.text_input(label="Longitude")
     # 41.015137, 28.979530
     df = pd.DataFrame(
-         {"lat":[float(lat)], "lon":[float(lon)]})
+         {"lat":[lat], "lon":[lon]})
 
     st.map(df)
     
