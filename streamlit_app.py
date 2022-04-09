@@ -16,8 +16,8 @@ In the meantime, below is an example of what you can do with just a few lines of
 """
 
 
-lat = float(st.text_input(label="Latitude"))
-lon = float(st.text_input(label="Longitude"))
+lat = st.text_input(label="Latitude")
+lon = st.text_input(label="Longitude")
 
 df = pd.DataFrame(
      [lat, lon],
